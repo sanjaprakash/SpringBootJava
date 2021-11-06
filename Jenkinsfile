@@ -40,17 +40,7 @@ stages{
     }
     stage("cobertura publish"){
         steps{
-            cobertura autoUpdateHealth: false, 
-            autoUpdateStability: false, 
-            coberturaReportFile: '**/target/site/cobertura/coverage.xml', 
-            conditionalCoverageTargets: '70, 60, 40', 
-            lineCoverageTargets: '80, 70, 60', 
-            maxNumberOfBuilds: 0, 
-            methodCoverageTargets: '80, 60, 40', 
-            onlyStable: false, 
-            packageCoverageTargets: '80, 60, 40', 
-            sourceEncoding: 'ASCII', 
-            zoomCoverageChart: false
+            cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: '**/target/site/cobertura/coverage.xml', conditionalCoverageTargets: '70, 60, 40', fileCoverageTargets: '70, 60, 40', lineCoverageTargets: '80, 70, 50', maxNumberOfBuilds: 0, methodCoverageTargets: '80, 60, 40', onlyStable: false, packageCoverageTargets: '80, 70, 50', sourceEncoding: 'ASCII', zoomCoverageChart: false
         }
 		}
     stage("build"){
