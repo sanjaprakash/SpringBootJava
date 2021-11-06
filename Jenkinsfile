@@ -43,13 +43,13 @@ stages{
             cobertura autoUpdateHealth: false, 
 	    autoUpdateStability: false, 
 	    coberturaReportFile: '**/target/site/cobertura/coverage.xml', 
-            conditionalCoverageTargets: '70, 60, 40', 
-            fileCoverageTargets: '70, 60, 40', 
-            lineCoverageTargets: '80, 60, 40', 
+            conditionalCoverageTargets: '70, 60, 0', 
+            fileCoverageTargets: '70, 60, 0', 
+            lineCoverageTargets: '80, 60, 0', 
 	    maxNumberOfBuilds: 0, 
-	    methodCoverageTargets: '80, 70, 30', 
+	    methodCoverageTargets: '80, 70, 0', 
             onlyStable: false, 
-            packageCoverageTargets: '80, 60, 40', 
+            packageCoverageTargets: '80, 60, 0', 
 	    sourceEncoding: 'ASCII', 
 	    zoomCoverageChart: false
         }
